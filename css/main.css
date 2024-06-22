@@ -1,0 +1,73 @@
+body {
+  background-color: hsl(0, 0%, 8%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background-color: hsl(0, 0%, 12%);
+  width: 400px;
+  padding: 20px;
+  border-radius: 15px;
+}
+@media (max-width: 375px) {
+  body {
+    padding: 20px;
+  }
+  .container {
+    padding: 0 20px;
+  }
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.info .avatar-jessica img {
+  margin-top: 30px;
+  width: 125px;
+  border-radius: 50%;
+}
+.info .text h1 {
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  margin: 20px 0 10px;
+}
+.info .text h2 {
+  color: hsl(75, 94%, 57%);
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+.links {
+  text-align: center;
+}
+.links p {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 20px;
+}
+.links ul {
+  list-style-type: none;
+  max-width: 100%;
+}
+.links ul li {
+  padding: 15px;
+  background-color: hsl(0, 0%, 20%);
+  margin: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.links ul li:hover {
+  background-color: hsl(75, 94%, 57%);
+  a {
+    color: hsl(0, 0%, 12%);
+  }
+}
+.links ul li a {
+  font-weight: 700;
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
